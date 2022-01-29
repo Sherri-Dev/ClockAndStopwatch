@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/6e8abed0ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="dark">
+    <div class="container-2">
+        <div id="toggle">
+            <i id="day" class="far fa-sun indicator "></i>
+            <i id="night" class="far fa-moon indicator active"></i>
+        </div>
+        <h3 id="heading">Clock</h3>
+        <div class="content">
+            <div id="clock">
+                <div class="clock-container">
+                    <div id="hr-hand"></div>
+                    <div id="min-hand"></div>
+                    <div id="sec-hand"></div>
+                </div>
+                <div id="time-box">
+                    <span> Day</span><br>
+                    <span> Month</span>
+                    <span> Date</span>,
+                    <span>Year</span>
+                </div>
+            </div>
+            <div id="stopwatch">
+                <div class="circle-outer ">
+                    <svg>
+                        <circle id="CM-prog " cx="153" cy="153" r="120" />
+                    </svg>
+                    <div class="circle-inner flex ">
+                        <div class="circle-inner-content flex ">
+                            <h1 id="hr">00</h1><span><h1>:</h1></span>
+                            <h1 id="min">00</h1><span><h1>:</h1></span>
+                            <h1 id="sec">00</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="laps-container flex">
+
+                </div>
+                <div class="btn-container flex">
+                    <div class="btn-toggle">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                    </div>
+                    <button id="lap">Lap</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+
+        </div>
+        <nav id="footer-nav">
+            <ul class="flex">
+                <li id="clockLi" class="active">
+                    <i class="fas fa-clock"></i>
+                    <div class="tooltip">Clock</div>
+                </li>
+                <li id="stopwatchLi">
+                    <i class="fas fa-stopwatch"></i>
+                    <div class="tooltip">stopwatch</div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="JS/stopwatch.js "></script>
+<script src="JS/clock.js "></script>
+<script src="JS/main.js"></script>
+
+</html>
